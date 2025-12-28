@@ -1,0 +1,6 @@
+{
+  "appId": "com.lytix.lydrive",
+  "appName": "LYDRIVE",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
