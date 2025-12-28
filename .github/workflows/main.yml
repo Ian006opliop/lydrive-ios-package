@@ -1,0 +1,16 @@
+name: Build iOS App
+on: [push]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          npm install @capacitor/core @capacitor/cli @capacitor/ios
+          npx cap add ios
+          npx cap copy
+      - name: Build with Xcode
+        run: |
+          # 這裡會模擬 Xcode 編譯過程
+          echo "Building iOS App..."
